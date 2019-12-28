@@ -7,11 +7,14 @@ public class Isomorphic {
 
     public boolean check(String one, String another) {
         //a - b is true
-        return Arrays.equals(indexesOf(one), indexesOf(another));
+        return Arrays.equals(normalized(one), normalized(another));
     }
 
-    private int[] indexesOf(String one) {
-        List<Integer> distinctChars = one.chars().distinct().boxed().collect(toList());
-        return one.chars().map(distinctChars::indexOf).toArray();
+    private List<Integer> distinctChars(String one) {
+        return one.chars().distinct().boxed().collect(toList());
+    }
+
+    private int[] normalized(String one) {
+        return one.chars().map(distinctChars(one)::indexOf).toArray();
     }
 }
