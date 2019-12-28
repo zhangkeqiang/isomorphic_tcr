@@ -24,7 +24,7 @@ public class IsomorphicTest {
     }
 
     @Test
-    public void xxx() {
+    public void should_be_false_when_length_is_same_but_one_has_duplicated_char() {
         assertFalse(isomorphic.check("ab", "dd"));
     }
 
