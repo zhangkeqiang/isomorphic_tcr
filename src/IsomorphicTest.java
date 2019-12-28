@@ -28,4 +28,9 @@ public class IsomorphicTest {
         assertFalse(isomorphic.check("ab", "dd"));
     }
 
+    @Test
+    public void acceptance_tests() {
+        assertTrue(isomorphic.check("egg", "foo"));
+    }
+
 }
