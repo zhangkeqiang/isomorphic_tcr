@@ -30,7 +30,7 @@ public class IsomorphicTest {
 
     @Test
     public void acceptance_tests() {
-        assertTrue(isomorphic.check("egg", "foo"));
+        assertTrue(isomorphic.check("egg", "add"));
     }
 
 }
