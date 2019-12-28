@@ -6,7 +6,6 @@ import static java.util.stream.Collectors.toList;
 public class Isomorphic {
 
     public boolean check(String one, String another) {
-        //a - b is true
         return Arrays.equals(normalized(one), normalized(another));
     }
 
