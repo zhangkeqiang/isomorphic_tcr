@@ -9,6 +9,7 @@ public class Isomorphic {
     }
 
     private int[] indexesOf(String one) {
+        int[] distinctChars = one.chars().distinct().toArray();
         return IntStream.range(0, one.length()).toArray();
     }
 }

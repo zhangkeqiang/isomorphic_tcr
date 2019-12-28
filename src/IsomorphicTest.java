@@ -22,4 +22,5 @@ public class IsomorphicTest {
         assertTrue(isomorphic.check("a", "b"));
         assertTrue(isomorphic.check("ab", "dc"));
     }
+
 }
