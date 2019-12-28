@@ -1,8 +1,8 @@
 public class Isomorphic {
 
     public boolean check(String one, String another) {
-        //a - a is true
-        if (one.equals(another)) {
+        //a - b is true
+        if (one.length() == another.length()) {
             return true;
         }
         return false;
