@@ -31,6 +31,7 @@ public class IsomorphicTest {
     @Test
     public void acceptance_tests() {
         assertTrue(isomorphic.check("egg", "add"));
+        assertFalse(isomorphic.check("foo", "bar"));
     }
 
 }
