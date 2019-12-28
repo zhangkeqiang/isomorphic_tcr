@@ -16,4 +16,9 @@ public class IsomorphicTest {
     public void should_be_true_when_equals() {
         assertTrue(isomorphic.check("a", "a"));
     }
+
+    @Test
+    public void should_be_true_when_length_is_same_and_no_duplication_char() {
+        assertTrue(isomorphic.check("a", "b"));
+    }
 }
