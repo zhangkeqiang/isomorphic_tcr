@@ -5,10 +5,7 @@ public class Isomorphic {
 
     public boolean check(String one, String another) {
         //a - b is true
-        if (Arrays.equals(indexesOf(one), indexesOf(another))) {
-            return true;
-        }
-        return false;
+        return Arrays.equals(indexesOf(one), indexesOf(another));
     }
 
     private int[] indexesOf(String one) {
