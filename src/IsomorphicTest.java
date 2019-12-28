@@ -7,7 +7,9 @@ public class IsomorphicTest {
     @Test
     public void should_be_false_when_length_is_different() {
         Isomorphic isomorphic = new Isomorphic();
-        boolean actual = isomorphic.check("a", "a");
+
+        boolean actual = isomorphic.check("a", "bc");
+
         assertFalse(actual);
     }
 }
