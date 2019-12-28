@@ -33,6 +33,7 @@ public class IsomorphicTest {
         assertTrue(isomorphic.check("egg", "add"));
         assertFalse(isomorphic.check("foo", "bar"));
         assertTrue(isomorphic.check("addanegg", "teetabdd"));
+        assertFalse(isomorphic.check("tddisbdd", "bddnttdd"));
     }
 
 }
