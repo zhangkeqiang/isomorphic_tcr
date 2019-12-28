@@ -1,5 +1,6 @@
 import java.util.Arrays;
-import java.util.stream.IntStream;
+
+import static java.util.Arrays.asList;
 
 public class Isomorphic {
 
@@ -10,6 +11,7 @@ public class Isomorphic {
 
     private int[] indexesOf(String one) {
         int[] distinctChars = one.chars().distinct().toArray();
-        return IntStream.range(0, one.length()).toArray();
+        int[] indexArray = one.chars().map(c -> asList(distinctChars).indexOf(c)).toArray();
+        return indexArray;
     }
 }
