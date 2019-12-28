@@ -23,4 +23,9 @@ public class IsomorphicTest {
         assertTrue(isomorphic.check("ab", "dc"));
     }
 
+    @Test
+    public void xxx() {
+        assertFalse(isomorphic.check("ab", "dd"));
+    }
+
 }
