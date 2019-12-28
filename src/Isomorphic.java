@@ -12,7 +12,6 @@ public class Isomorphic {
 
     private int[] indexesOf(String one) {
         List<Integer> distinctChars = one.chars().distinct().boxed().collect(toList());
-        int[] indexArray = one.chars().map(distinctChars::indexOf).toArray();
-        return indexArray;
+        return one.chars().map(distinctChars::indexOf).toArray();
     }
 }
